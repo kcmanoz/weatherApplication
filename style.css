@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-image: url("lestijärvi.jpg");
+}
+
+.container {
+  width: 500px;
+  padding: 10px;
+  border-radius: 25px;
+  background: beige;
+}
+
+header {
+  color: brown;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.container .enter-input {
+  font-size: 25px;
+  margin: 25px 20px;
+}
+
+.enter-input input {
+  padding: 5px;
+  width: 60%;
+  font-size: 90%;
+  height: 30px;
+  border-radius: 5px;
+}
+.enter-input button {
+  width: 10%;
+  height: 30px;
+  border-radius: 5px;
+}
