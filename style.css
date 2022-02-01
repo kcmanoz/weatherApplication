@@ -16,7 +16,7 @@ body {
   width: 500px;
   padding: 10px;
   border-radius: 25px;
-  background: beige;
+  background: lightskyblue;
 }
 
 header {
@@ -25,20 +25,29 @@ header {
   font-size: 30px;
   font-weight: bold;
 }
-.container .enter-input {
+
+.container section {
   font-size: 25px;
-  margin: 25px 20px;
+  font-weight: bold;
+  margin: 25px;
 }
 
 .enter-input input {
   padding: 5px;
-  width: 60%;
-  font-size: 90%;
+  background: lightgrey;
+  width: 300px;
+  font-size: 25px;
   height: 30px;
   border-radius: 5px;
 }
+
 .enter-input button {
-  width: 10%;
-  height: 30px;
+  width: 100px;
+  font-size: 25px;
+  height: 40px;
   border-radius: 5px;
+}
+
+.display {
+  text-align: center;
 }
