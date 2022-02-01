@@ -16,7 +16,7 @@ body {
   width: 500px;
   padding: 10px;
   border-radius: 25px;
-  background: lightskyblue;
+  background: rgb(236, 242, 243);
 }
 
 header {
@@ -49,5 +49,11 @@ header {
 }
 
 .display {
+  width: 400px;
   text-align: center;
+  margin: 10px;
+  padding: 40px 0px;
+  font-size: 20px;
+  background: rgb(157, 227, 255);
+  border-radius: 10px;
 }
