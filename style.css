@@ -16,14 +16,19 @@ body {
   width: 500px;
   padding: 10px;
   border-radius: 25px;
-  background: rgb(236, 242, 243);
+  background: #ECF0F1;
 }
 
-header {
-  color: brown;
-  text-align: center;
-  font-size: 30px;
+.container header {
+  color: #3498DB;
+  text-align: left;
+  font-size: 35px;
   font-weight: bold;
+}
+
+header i {
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .container section {
@@ -34,7 +39,7 @@ header {
 
 .enter-input input {
   padding: 5px;
-  background: lightgrey;
+  background: #D0D3D4;
   width: 300px;
   font-size: 25px;
   height: 30px;
@@ -48,12 +53,13 @@ header {
   border-radius: 5px;
 }
 
-.display {
+.weather-display {
+  display: none;
   width: 400px;
   text-align: center;
   margin: 10px;
   padding: 40px 0px;
   font-size: 20px;
-  background: rgb(157, 227, 255);
+  background: #AED6F1;
   border-radius: 10px;
 }
