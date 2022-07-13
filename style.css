@@ -22,15 +22,20 @@ body {
 .container header {
   color: #3498DB;
   text-align: left;
-  font-size: 35
-  
-  git stapx;
-  font-weight: bold;
+  display: flex;
+  font-size: 30px;
+  font-weight:bold;
 }
 
-header i {
-  margin-right: 10px;
+.al {
+  font-size: 50px;
+  margin-right: 5px;
   cursor: pointer;
+}
+
+.container.active header i{
+  display: flex;
+  margin-right: 10px;
 }
 
 .container section {
@@ -39,6 +44,9 @@ header i {
   margin: 25px;
 }
 
+.container .enter-input{
+  display: flex;
+}
 .enter-input input {
   padding: 5px;
   background: #D0D3D4;
@@ -55,8 +63,8 @@ header i {
   border-radius: 5px;
 }
 
-.weather-display {
-  display: none;
+.container .weather-display {
+  display: flex;
   width: 400px;
   text-align: center;
   margin: 10px;
@@ -64,4 +72,8 @@ header i {
   font-size: 20px;
   background: #AED6F1;
   border-radius: 10px;
+}
+
+.container.active .weather-display{
+  display: flex;
 }
