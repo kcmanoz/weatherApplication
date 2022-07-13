@@ -22,11 +22,7 @@ body {
 .container header {
   color: #3498DB;
   text-align: left;
-  display: flex;
-  font-size: 30px;
-  font-weight:bold;
 }
-
 .al {
   font-size: 50px;
   margin-right: 5px;
