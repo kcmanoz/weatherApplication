@@ -20,18 +20,20 @@ body {
 }
 
 .container header {
+  display: flex;
   color: #3498DB;
-  text-align: left;
+  font-size: 30px;
+  align-items: center;
 }
-.al {
-  font-size: 50px;
-  margin-right: 5px;
+.material-icons-outlined {
+  font-size: 0px;
   cursor: pointer;
 }
 
-.container.active header i{
-  display: flex;
-  margin-right: 10px;
+.container.active .material-icons-outlined{
+  font-size: 60px;
+  text-align: left;
+  margin-left: -12px;
 }
 
 .container section {
@@ -40,8 +42,20 @@ body {
   margin: 25px;
 }
 
+section .city{
+  margin-right: 10px;
+}
+
+section .enter{
+  margin-left: 10px;
+}
+
 .container .enter-input{
   display: flex;
+}
+
+.container.active .enter-input {
+  display: none;
 }
 .enter-input input {
   padding: 5px;
@@ -60,9 +74,10 @@ body {
 }
 
 .container .weather-display {
-  display: flex;
-  width: 400px;
+  display: none;
+  width: auto;
   text-align: center;
+  justify-content: center;
   margin: 10px;
   padding: 40px 0px;
   font-size: 20px;

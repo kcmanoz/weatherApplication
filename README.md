@@ -1,4 +1,4 @@
 # weatherApplication
 
-A simple application built using JavaScript, html and css to dispaly weather
+A simple application built using JavaScript, html and css to display weather
 information of a city!
