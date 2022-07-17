@@ -42,18 +42,6 @@ body {
   margin: 25px;
 }
 
-section .city{
-  margin-right: 10px;
-}
-
-section .enter{
-  margin-left: 10px;
-}
-
-.container .enter-input{
-  display: flex;
-}
-
 .container.active .enter-input {
   display: none;
 }
