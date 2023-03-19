@@ -1,66 +1,101 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Playfair Display", serif;
-}
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-size: cover;
-  background-image: url("lestijärvi.jpg");
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Playfair Display", serif;
+}
+
+/* Set background */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0d3962, #f79d65);
+}
+
+/* Set container styles */
 .container {
   width: 500px;
   padding: 10px;
   border-radius: 25px;
-  background: #ECF0F1;
+  background-color: #ecf0f1;
 }
 
+/* Set header styles */
 .container header {
   display: flex;
-  color: #3498DB;
-  font-size: 30px;
   align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #3498db;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
+
+/* Set back arrow styles */
 .material-icons-outlined {
-  font-size: 0px;
+  font-size: 30px;
   cursor: pointer;
 }
 
-.container.active .material-icons-outlined{
-  font-size: 60px;
-  text-align: left;
-  margin-left: -12px;
-}
-
+/* Set section styles */
 .container section {
-  font-size: 25px;
-  font-weight: bold;
   margin: 25px;
 }
 
-.container.active .enter-input {
+/* Set error text styles */
+.enter-input .error-text {
   display: none;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 14px;
 }
-.enter-input input {
-  padding: 5px;
-  background: #D0D3D4;
-  width: 300px;
-  font-size: 25px;
-  height: 30px;
+
+.enter-input .error-text.error {
+  display: block;
+  color: red;
+  background-color: #f2f2f2;
   border-radius: 5px;
+  padding: 10px;
+}
+
+/* Set input and button styles */
+.enter-input input {
+  padding: 10px;
+  background-color: #d0d3d4;
+  width: 300px;
+  font-size: 20px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
 }
 
 .enter-input button {
   width: 100px;
-  font-size: 25px;
+  font-size: 20px;
   height: 40px;
   border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #3498db;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
+.enter-input button:hover {
+  background-color: #2980b9;
+}
+
+/* Set weather display styles */
 .container .weather-display {
   display: none;
   width: auto;
@@ -69,10 +104,28 @@ body {
   margin: 10px;
   padding: 40px 0;
   font-size: 20px;
-  background: #AED6F1;
+  background-color: #aed6f1;
   border-radius: 10px;
 }
 
-.container.active .weather-display{
+.container.active .weather-display {
   display: flex;
+}
+
+/* Set weather info styles */
+.city-name {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.temperature {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.humidity,
+.description {
+  margin-bottom: 10px;
 }
