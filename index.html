@@ -4,47 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
+    <title>Weather Application</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <div class="container">
-      <header><i class="material-icons-outlined">arrow_left</i>Weather</header>
-      <section class="enter-input">
-        <div>
-          <p class="error-text"></p>
-        </div>
-        <form>
+      <div class="header">
+        <div class="input-box">
           <input
             type="text"
-            class="input-value"
-            placeholder="Enter the city name"
-            spellcheck="false"
-            required
+            placeholder="Enter the location"
+            class="input-box"
           />
-          <button type="submit" class="enter">Enter</button>
-        </form>
-      </section>
-      <section class="weather-display">
-        <div class="weather">
-          <h3 class="city-name"></h3>
-          <p class="temperature"></p>
-          <p class="humidity"></p>
-          <p class="description"></p>
+          <button>Enter</button>
         </div>
-      </section>
+      </div>
+      <div class="weather-body"></div>
     </div>
-    <script src="app.js"></script>
   </body>
 </html>
