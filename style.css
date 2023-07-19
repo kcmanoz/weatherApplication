@@ -28,7 +28,7 @@ body {
   align-items: center;
 }
 
-.search-box input {
+.input-box input {
   width: 80%;
   font-size: 22px;
   color: black;
@@ -49,4 +49,8 @@ body {
 .input-box button:hover {
   color: white;
   background-color: dodgerblue;
+}
+
+.weather-body img {
+  width: 40%;
 }
