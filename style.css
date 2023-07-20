@@ -51,6 +51,43 @@ body {
   background-color: dodgerblue;
 }
 
+.weather-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
 .weather-body img {
   width: 40%;
+}
+
+.weather-box {
+  margin: 10px;
+  text-align: center;
+}
+
+.weather-box .temperature {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.weather-box .description {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.weather-information {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.humidity,
+.wind {
+  display: flex;
+  align-items: center;
 }
