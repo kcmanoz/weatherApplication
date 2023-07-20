@@ -40,7 +40,7 @@ body {
 .input-box button {
   width: 65px;
   height: 45px;
-  background-color: #6cb8e1;
+  background-color: lightblue;
   border-radius: 5px;
   font-size: 20px;
   cursor: pointer;
@@ -79,7 +79,7 @@ body {
   text-transform: capitalize;
 }
 
-.weather-information {
+.weather-info {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -90,4 +90,26 @@ body {
 .wind {
   display: flex;
   align-items: center;
+}
+
+.humidity {
+  margin-left: 25px;
+}
+
+.wind {
+  margin-right: 25px;
+}
+
+.weather-info span {
+  font-size: 36px;
+}
+
+.weather-info .text {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.text p {
+  font-size: 20px;
+  font-weight: 700;
 }
