@@ -52,7 +52,7 @@ body {
 }
 
 .weather-body {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -112,4 +112,22 @@ body {
 .text p {
   font-size: 20px;
   font-weight: 700;
+}
+
+.location-error {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+.location-error h1 {
+  font-size: 40px;
+  color: darkslategray;
+  margin-block-end: 20px;
+}
+
+.location-error img {
+  width: 75%;
 }
