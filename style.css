@@ -21,10 +21,10 @@ body {
   background-color: #ecf0f1;
 }
 
-.search-box {
+.input-box {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -34,7 +34,7 @@ body {
   color: black;
   background-color: lightblue;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 10px;
 }
 
 .input-box button {
