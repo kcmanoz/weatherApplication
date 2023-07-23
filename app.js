@@ -1,5 +1,5 @@
 const inputBox = document.querySelector('.location-box');
-const enterBtn = document.querySelector('.enter-btn');
+const enterBtn = document.querySelector('.search-btn');
 const weatherIcon = document.querySelector('.weather-icon');
 const temperature = document.querySelector('.temperature');
 const description = document.querySelector('.description');
