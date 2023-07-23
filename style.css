@@ -124,7 +124,7 @@ body {
 
 .location-error h1 {
   font-size: 40px;
-  color: darkslategray;
+  color: red;
   margin-block-end: 20px;
 }
 
