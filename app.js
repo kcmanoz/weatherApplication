@@ -14,7 +14,7 @@ async function getWeatherData(city) {
     const api_key = "f580de753052bf1267e78e268fb51e63";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${api_key}`;
 
-    const weatherData = await fetch(`${url}`).then(response => response.json());
+    const weatherData = await fetch(url).then(response => response.json());
 
     if (weatherData.cod === `404`) {
         locationError.style.display = "flex";
