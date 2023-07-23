@@ -103,11 +103,11 @@ body {
 }
 
 .weather-info span {
-  font-size: 36px;
+  font-size: 35px;
 }
 
 .weather-info .text {
-  margin-left: 8px;
+  margin-left: 5px;
   font-size: 18px;
 }
 
