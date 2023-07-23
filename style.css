@@ -18,7 +18,7 @@ body {
   width: 80%;
   max-width: 500px;
   padding: 15px 10px;
-  border-radius: 15px;
+  border-radius: 30px;
   background-color: white;
 }
 
@@ -130,4 +130,19 @@ body {
 
 .location-error img {
   width: 75%;
+}
+
+.error-popup {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff8383;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 9999;
+  transition: all 0.5s ease-in-out; /* optional, for smooth appearance */
 }

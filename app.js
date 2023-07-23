@@ -6,6 +6,7 @@ const description = document.querySelector('.description');
 const humidity = document.querySelector('#humidity');
 const windSpeed = document.querySelector('#wind-speed');
 
+const errorPopup = document.getElementById('error-popup');
 const locationError = document.querySelector('.location-error');
 const weatherBody = document.querySelector('.weather-body');
 
@@ -49,12 +50,23 @@ async function getWeatherData(city) {
     }
 
 }
-
-enterBtn.addEventListener('click', () => {
-    const inputValue = inputBox.value.trim();  // Removes any leading or trailing white spaces
-    if (inputValue) {  // If input value is not empty
+function handleWeatherData() {
+    const inputValue = inputBox.value.trim(); // Removes any leading or trailing white spaces
+    if (inputValue) {
         getWeatherData(inputValue);
+        errorPopup.style.display = 'none';  // Hide error popup if there is input
     } else {
-        alert("Please enter a location.");
+        errorPopup.style.display = 'block';
+        setTimeout(() => {  // Hide error popup after 1 seconds
+            errorPopup.style.display = 'none';
+        }, 1000);
+    }
+};
+
+inputBox.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        handleWeatherData();
     }
 });
+
+enterBtn.addEventListener('click', handleWeatherData);
