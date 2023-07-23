@@ -144,5 +144,5 @@ body {
   border-radius: 10px;
   text-align: center;
   z-index: 9999;
-  transition: all 0.5s ease-in-out; /* optional, for smooth appearance */
+  transition: all 0.5s ease-in-out;
 }
