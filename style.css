@@ -10,15 +10,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #0d3962, #f79d65);
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #2e8de7, #f1a779);
 }
 
-/* Set container styles */
 .container {
-  width: 500px;
-  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  padding: 15px 10px;
   border-radius: 15px;
-  background-color: #ecf0f1;
+  background-color: white;
 }
 
 .input-box {
@@ -30,19 +31,18 @@ body {
 
 .input-box input {
   width: 80%;
+  height: 60px;
   font-size: 22px;
-  color: black;
   background-color: lightblue;
-  border-radius: 5px;
+  border-radius: 25px;
   padding: 10px;
 }
 
 .input-box button {
-  width: 65px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
   background-color: lightblue;
-  border-radius: 5px;
-  font-size: 20px;
+  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -110,8 +110,8 @@ body {
 }
 
 .text p {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .location-error {

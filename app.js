@@ -49,6 +49,12 @@ async function getWeatherData(city) {
     }
 
 }
+
 enterBtn.addEventListener('click', () => {
-    getWeatherData(inputBox.value);
+    const inputValue = inputBox.value.trim();  // Removes any leading or trailing white spaces
+    if (inputValue) {  // If input value is not empty
+        getWeatherData(inputValue);
+    } else {
+        alert("Please enter a location.");
+    }
 });
