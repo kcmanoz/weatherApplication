@@ -14,7 +14,7 @@ Interactive User Interface: The app presents the weather data in a well-structur
 
 # Tech Stack
 
-HTML5
-CSS3
-JavaScript
+HTML5,
+CSS3,
+JavaScript,
 OpenWeatherMap API
