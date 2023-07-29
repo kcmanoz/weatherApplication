@@ -18,3 +18,7 @@ HTML5,
 CSS3,
 JavaScript,
 OpenWeatherMap API
+
+## View live at:
+
+https://weather-application-info.vercel.app/
