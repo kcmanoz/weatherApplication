@@ -5,6 +5,9 @@ const temperature = document.querySelector('.temperature');
 const description = document.querySelector('.description');
 const humidity = document.querySelector('#humidity');
 const windSpeed = document.querySelector('#wind-speed');
+const searchSection = document.querySelector('.search');
+const weatherArrow = document.querySelector('.weather-body .arrow-back');
+const errorArrow = document.querySelector('.location-error .arrow-back');
 
 const errorPopup = document.getElementById('error-popup');
 const locationError = document.querySelector('.location-error');
@@ -18,13 +21,15 @@ async function getWeatherData(city) {
     const weatherData = await fetch(url).then(response => response.json());
     console.log(weatherData);
     if (weatherData.cod === `404`) {
-        locationError.style.display = 'flex';
         weatherBody.style.display = 'none';
+        locationError.style.display = 'flex';
+        searchSection.style.display = 'none';
         console.log('error');
         return;
     }
 
     locationError.style.display = 'none';
+    searchSection.style.display = 'none';
     weatherBody.style.display = 'flex';
 
     cityName.innerHTML = `${weatherData.name}`;
@@ -52,11 +57,23 @@ async function getWeatherData(city) {
     }
 
 }
+
+weatherArrow.addEventListener('click', () => {
+    weatherBody.style.display = 'none';
+    searchSection.style.display = 'flex';
+});
+
+errorArrow.addEventListener('click', () => {
+    locationError.style.display = 'none';
+    searchSection.style.display = 'flex';
+});
+
 function handleWeatherData() {
     const inputValue = inputBox.value.trim(); // Removes any leading or trailing white spaces
     if (inputValue) {
         getWeatherData(inputValue);
         errorPopup.style.display = 'none';  // Hide error popup if there is input
+
     } else {
         errorPopup.style.display = 'block';
         setTimeout(() => {  // Hide error popup after 1 seconds
