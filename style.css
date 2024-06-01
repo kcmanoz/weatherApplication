@@ -13,7 +13,9 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(to bottom, #2e8de7, #f1a779);
+  background: url("/assets/weather-background.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
 }
 
 .container {
